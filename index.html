@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root{
+      /* Primary */
+
+      --LightRed: hsl(0, 100%, 67%)
+      --OrangeyYellow: hsl(39, 100%, 56%)
+      --GreenTeal: hsl(166, 100%, 37%)
+      --CobaltBlue: hsl(234, 85%, 45%)
+
+      /* Gradients */
+      /* background */
+      --LightSlateBlue: hsl(252, 100%, 67%)
+      --LightRoyalBlue: hsl(241, 81%, 54%)
+      /* circle */
+      --VioletBlue: hsla(256, 72%, 46%, 1)
+      --PersianBlue: hsla(241, 72%, 46%, 0)
+
+
+
+      ### Neutral
+
+      --White: hsl(0, 0%, 100%)
+      --PaleBlue: hsl(221, 100%, 96%)
+      --LightLavender: hsl(241, 100%, 89%)
+      --DarkGrayBlue: hsl(224, 30%, 27%)
+    }
+
+    .WorkSpace{
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .Contener{
+      width: 50vw;
+      height: 50vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      border: solid black 1px;
+      border-radius: 20px;
+    }
+
+    .Left{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      border: solid 1px gray;
+      border-radius: 20px;
+
+      padding: 40px;
+      box-sizing: border-box
+    }
+
+    .Circle{
+      border-radius: 50%;
+      border: solid black 1px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*  */
+
+    .right{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      padding: 40px;
+      box-sizing: border-box
+    }
+
+
+
+  </style>
+</head>
+<body>
+  <section class="WorkSpace">
+    <section class="Contener">
+      <main class="Left">
+        <p>Your Result</p>
+        
+        <div class="Circle">
+          76
+          <br>
+          of 100
+        </div>
+        Great
+        You scored higher than 65% of the people who have taken these tests.
+      </main>
+      <nav class="right">
+        <p>Summary</p>
+
+        <div>
+          Reaction
+          80 / 100
+        </div>
+
+        <div>
+          Memory
+          92 / 100
+        </div>
+
+        <div>
+          Verbal
+          61 / 100
+        </div>
+
+        <div>
+          Visual
+          72 / 100
+        </div>
+
+        <button>Continue</button>
+      </nav>
+    </section>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
