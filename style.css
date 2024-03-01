@@ -4,27 +4,31 @@
     :root{
       /* Primary */
 
-      --LightRed: hsl(0, 100%, 67%)
-      --OrangeyYellow: hsl(39, 100%, 56%)
-      --GreenTeal: hsl(166, 100%, 37%)
-      --CobaltBlue: hsl(234, 85%, 45%)
+      --LightRed: hsl(0, 100%, 67%);
+      --LightRedBG: hsl(0, 100%, 67%, 0.5);
+      --OrangeyYellow: hsl(39, 100%, 56%);
+      --OrangeyYellowBG: hsl(39, 100%, 56%, 0.5);
+      --GreenTeal: hsl(166, 100%, 37%);
+      --GreenTealBG: hsl(166, 100%, 37%, 0.5);
+      --CobaltBlue: hsl(234, 85%, 45%);
+      --CobaltBlueBG: hsl(234, 85%, 45%, 0.5);
 
       /* Gradients */
       /* background */
-      --LightSlateBlue: hsl(252, 100%, 67%)
-      --LightRoyalBlue: hsl(241, 81%, 54%)
+      --LightSlateBlue: hsl(252, 100%, 67%);
+      --LightRoyalBlue: hsl(241, 81%, 54%);
       /* circle */
-      --VioletBlue: hsla(256, 72%, 46%, 1)
-      --PersianBlue: hsla(241, 72%, 46%, 0)
+      --VioletBlue: hsla(256, 72%, 46%, 1);
+      --PersianBlue: hsla(241, 72%, 46%, 0);
 
 
 
-      ### Neutral
+      /* ### Neutral */
 
-      --White: hsl(0, 0%, 100%)
-      --PaleBlue: hsl(221, 100%, 96%)
-      --LightLavender: hsl(241, 100%, 89%)
-      --DarkGrayBlue: hsl(224, 30%, 27%)
+      --White: hsl(0, 0%, 100%);
+      --PaleBlue: hsl(221, 100%, 96%);
+      --LightLavender: hsl(241, 100%, 89%);
+      --DarkGrayBlue: hsl(224, 30%, 27%);
     }
 
     .WorkSpace{
@@ -43,6 +47,9 @@
 
       border: solid black 1px;
       border-radius: 20px;
+
+      background-color: var(--White);
+      box-shadow: 1px 1px 5px black;
     }
 
     .Left{
@@ -55,17 +62,20 @@
       border-radius: 20px;
 
       padding: 40px;
-      box-sizing: border-box
+      box-sizing: border-box;
+
+      background-image: linear-gradient(to top, var(--LightRoyalBlue), var(--LightSlateBlue));
     }
 
     .Circle{
-      border-radius: 50%;
-      border: solid black 1px;
-      padding: 40px;
+      border-radius: 50%;;
+      padding: 60px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      background-image: linear-gradient(to bottom, var(--VioletBlue) 50%, var(--PersianBlue));
     }
 
     /*  */
@@ -79,4 +89,34 @@
 
       padding: 40px;
       box-sizing: border-box
+    }
+
+    .Reaction{
+        background-color: var(--LightRedBG);
+        color: var(--LightRed);
+        font-weight: 520;
+    }
+
+    .Memory{
+        background-color: var(--OrangeyYellowBG);
+        color: var(--OrangeyYellow);
+    }
+
+    .Verbal{
+        background-color: var(--GreenTealBG);
+        color: var(--GreenTeal);
+    }
+
+    .Visual{
+        background-color: var(--CobaltBlueBG);
+        color: var(--CobaltBlue);
+    }
+
+    .Button{
+        background-image: linear-gradient(to top, var(--LightRoyalBlue), var(--LightSlateBlue));
+        border: 0;
+        border-radius: 50px;
+        width: 100%;
+        padding: 20px;
+        color: var(--White);
     }
