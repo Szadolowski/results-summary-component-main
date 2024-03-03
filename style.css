@@ -1,17 +1,31 @@
-.attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+      font-family: 'Hanken Grotesk';
+      font-weight: normal; 
+      font-style: normal; 
+    }
+
+    .hanken-grotesk{
+      font-family: "Hanken Grotesk", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: auto;
+      font-style: auto;
+    }
 
     :root{
       /* Primary */
 
       --LightRed: hsl(0, 100%, 67%);
-      --LightRedBG: hsl(0, 100%, 67%, 0.5);
+      --LightRedBG: hsl(0, 100%, 67%, 0.2);
       --OrangeyYellow: hsl(39, 100%, 56%);
-      --OrangeyYellowBG: hsl(39, 100%, 56%, 0.5);
+      --OrangeyYellowBG: hsl(39, 100%, 56%, 0.2);
       --GreenTeal: hsl(166, 100%, 37%);
-      --GreenTealBG: hsl(166, 100%, 37%, 0.5);
+      --GreenTealBG: hsl(166, 100%, 37%, 0.2);
       --CobaltBlue: hsl(234, 85%, 45%);
-      --CobaltBlueBG: hsl(234, 85%, 45%, 0.5);
+      --CobaltBlueBG: hsl(234, 85%, 45%, 0.2) ;
 
       /* Gradients */
       /* background */
@@ -39,8 +53,8 @@
     }
 
     .Contener{
-      width: 50vw;
-      height: 50vh;
+      width: 40vw;
+      /* height: 50vh; */
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -61,24 +75,80 @@
       border: solid 1px gray;
       border-radius: 20px;
 
-      padding: 40px;
+      padding: 20px 90px 60px;
       box-sizing: border-box;
 
       background-image: linear-gradient(to top, var(--LightRoyalBlue), var(--LightSlateBlue));
     }
 
+    #YourResult{
+      color: var(--LightLavender);
+      font-weight: 500;
+      font-size: x-large;
+    }
+
     .Circle{
       border-radius: 50%;;
-      padding: 60px;
+      padding: 100px;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
 
       background-image: linear-gradient(to bottom, var(--VioletBlue) 50%, var(--PersianBlue));
     }
 
+    #CircleDiv{
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #PercentCircle{
+      color: var(--White);
+      text-align: center;
+      margin: 0;
+
+      font-size: 70px;
+      font-weight: 700 ;
+    }
+
+    #BottomPercentCircle{
+      color: var(--LightLavender);
+      margin: 0;
+      text-align: center;
+    }
+
+    #Great{
+      font-weight: 700;
+      color: var(--White);
+      font-size: 30px;
+      margin: 20px 20px 20px;
+    }
+
+    #BottomText{
+      text-align: center;
+      margin: 0;
+      color: var(--LightLavender);
+      font-weight: 500;
+    }
+
+
+
     /*  */
+
+    #Summary{
+      width: 100%;
+      text-align: left;
+      font-weight: 800;
+      color: var(--DarkGrayBlue);
+      font-size: 150%;
+      margin: 0;
+      margin-bottom: 20px;
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     .right{
       width: 50%;
@@ -94,22 +164,45 @@
     .Reaction{
         background-color: var(--LightRedBG);
         color: var(--LightRed);
-        font-weight: 520;
+        font-weight: 700;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 5px;
     }
 
     .Memory{
         background-color: var(--OrangeyYellowBG);
         color: var(--OrangeyYellow);
+        font-weight: 700;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 5px;
     }
 
     .Verbal{
         background-color: var(--GreenTealBG);
         color: var(--GreenTeal);
+        font-weight: 700;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 5px;
     }
 
     .Visual{
         background-color: var(--CobaltBlueBG);
         color: var(--CobaltBlue);
+        font-weight: 700;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin: 5px;
     }
 
     .Button{
@@ -119,4 +212,7 @@
         width: 100%;
         padding: 20px;
         color: var(--White);
+        font-weight: 700;
+        font-size: 100%;
+        margin-top: 35px;
     }
