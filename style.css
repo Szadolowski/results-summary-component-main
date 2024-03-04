@@ -52,7 +52,8 @@
     .WorkSpace{
       height: 100vh;
       display: flex;
-
+      justify-content: center;
+      align-items: center;
     }
 
     @media only screen and (max-width: 768px){
@@ -79,9 +80,11 @@
     @media only screen and (min-width: 769px){
       .Contener{
         width: 40vw;
+        height: 520px;
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
         border-radius: 20px;
   
         background-color: var(--White);
@@ -91,7 +94,9 @@
       .Left{
         width: 50%;
         display: flex;
+        height: 100%;
         flex-direction: column;
+        justify-content: space-between;
         align-items: center;
         border-radius: 20px;
   
