@@ -80,6 +80,7 @@
     @media only screen and (min-width: 769px){
       .Contener{
         width: 40vw;
+        min-width: 510px;
         height: 520px;
         display: flex;
         flex-direction: row;
