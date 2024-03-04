@@ -80,7 +80,7 @@
     @media only screen and (min-width: 769px){
       .Contener{
         width: 40vw;
-        min-width: 700px;
+        min-width: 720px;
         height: 520px;
         display: flex;
         flex-direction: row;
@@ -106,6 +106,10 @@
   
         background-image: linear-gradient(to top, var(--LightRoyalBlue), var(--LightSlateBlue));
       }
+    }
+
+    .Left h1{
+      margin: 0;
     }
 
     #YourResult{
