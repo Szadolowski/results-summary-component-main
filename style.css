@@ -80,7 +80,7 @@
     @media only screen and (min-width: 769px){
       .Contener{
         width: 40vw;
-        min-width: 510px;
+        min-width: 700px;
         height: 520px;
         display: flex;
         flex-direction: row;
@@ -89,7 +89,7 @@
         border-radius: 20px;
   
         background-color: var(--White);
-        box-shadow: 1px 1px 5px black;
+        box-shadow: 2px 2px 10px var(--PaleBlue);
       }
 
       .Left{
