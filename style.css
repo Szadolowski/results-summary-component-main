@@ -19,13 +19,13 @@
       /* Primary */
 
       --LightRed: hsl(0, 100%, 67%);
-      --LightRedBG: hsl(0, 100%, 67%, 0.2);
+      --LightRedBG: hsl(0, 100%, 67%, 0.1);
       --OrangeyYellow: hsl(39, 100%, 56%);
-      --OrangeyYellowBG: hsl(39, 100%, 56%, 0.2);
+      --OrangeyYellowBG: hsl(39, 100%, 56%, 0.1);
       --GreenTeal: hsl(166, 100%, 37%);
-      --GreenTealBG: hsl(166, 100%, 37%, 0.2);
+      --GreenTealBG: hsl(166, 100%, 37%, 0.1);
       --CobaltBlue: hsl(234, 85%, 45%);
-      --CobaltBlueBG: hsl(234, 85%, 45%, 0.2) ;
+      --CobaltBlueBG: hsl(234, 85%, 45%, 0.1) ;
 
       /* Gradients */
       /* background */
@@ -58,8 +58,6 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-
-      border: solid black 1px;
       border-radius: 20px;
 
       background-color: var(--White);
@@ -71,8 +69,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-
-      border: solid 1px gray;
       border-radius: 20px;
 
       padding: 20px 90px 60px;
@@ -161,48 +157,72 @@
       box-sizing: border-box
     }
 
+    .RightSummary{
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      margin: 5px;
+      min-width: 190px;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .RightSummary p{
+      margin: 0;
+    }
+
+    .SummaryText{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+
+    .SummaryText p{
+      margin-left: 5px;
+      font-weight: 700;
+    }
+
+    .SummaryNumber{
+      display: flex;
+      flex-direction: row;
+    }
+
+    .SummaryNumber p:nth-child(1){
+      color: var(--DarkGrayBlue);
+      margin-right: 5px;
+
+      font-weight: 700;
+    }
+
+    .SummaryNumber p:nth-child(2){
+      color: gray;
+      font-weight: 700;
+    }
+
+
+
     .Reaction{
         background-color: var(--LightRedBG);
         color: var(--LightRed);
-        font-weight: 700;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 5px;
     }
 
     .Memory{
         background-color: var(--OrangeyYellowBG);
         color: var(--OrangeyYellow);
-        font-weight: 700;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 5px;
     }
 
     .Verbal{
         background-color: var(--GreenTealBG);
         color: var(--GreenTeal);
-        font-weight: 700;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 5px;
     }
 
     .Visual{
         background-color: var(--CobaltBlueBG);
         color: var(--CobaltBlue);
-        font-weight: 700;
-        width: 100%;
-        padding: 20px;
-        box-sizing: border-box;
-        border-radius: 10px;
-        margin: 5px;
     }
 
     .Button{
